@@ -110,3 +110,22 @@ section {
 .project-details a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1000px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-links {
+        margin-right: 0;
+    }
+    .project {
+        flex-direction: column;
+    }
+    .project-image, .project-details {
+        padding: 10px;
+    }
+    .project-image {
+        order: -1; /* Move image above description */
+    }
+}
