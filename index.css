@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    margin: 0;
+    margin-left: 30px;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    margin-right: 30px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    background-color: #333;
+}
+
+.social-links li {
+    margin: 0;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: #0077b5; /* Default color for LinkedIn */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-links a.github-link {
+    background-color: #f5f5f5; /* Light gray color for GitHub */
+    color: #333; /* Dark text color */
+}
+
+.social-links a.linkedin-link:hover {
+    background-color: #00649a;
+}
+
+.social-links a.github-link:hover {
+    background-color: #e1e1e1; /* Slightly darker gray on hover */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image, .project-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-details h3 {
+    margin-top: 0;
+}
+
+.project-details a {
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
