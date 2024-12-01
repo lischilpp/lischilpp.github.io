@@ -65,9 +65,10 @@ header, footer {
 }
 
 main {
-    padding: 20px;
+    padding: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #f4f4f4;
 }
 
 section {
@@ -75,7 +76,7 @@ section {
     margin: 0 auto;
 }
 
-.project {
+/* .project {
     display: flex;
     margin: 20px 0;
     background-color: #fff;
@@ -127,6 +128,54 @@ section {
         padding: 10px;
     }
     .project-image {
-        order: -1; /* Move image above description */
+        order: -1; Move image above description 
     }
+}
+*/
+
+#projects-list {
+    /* background-color: #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    /* justify-content: center; */
+}
+
+.project {
+    border: 1px solid #ddd;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.project p {
+    color: #555;
+    height: 30px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project a:hover {
+    text-decoration: underline;
 }
