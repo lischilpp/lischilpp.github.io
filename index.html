@@ -1,191 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linus Schilpp - Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header id="header">
         <h1>Hi, I'm Linus Schilpp</h1>
         <ul class="social-links">
-            <li><a href="https://linkedin.com/in/linus-schilpp-92b351281" target="_blank" class="linkedin-link">LinkedIn</a></li>
+            <li><a href="https://linkedin.com/in/linus-schilpp-92b351281" target="_blank"
+                    class="linkedin-link">LinkedIn</a></li>
             <li><a href="https://github.com/lischilpp" target="_blank" class="github-link">GitHub</a></li>
         </ul>
     </header>
     <main>
-        <h2>Selected Projects</h2>
+        <h2>Open Source Projects</h2>
         <div id="projects-list">
-            
+            <div class="badges">
+                <a href="#artificial-intelligence" class="badge">
+                    <img src="https://img.shields.io/badge/-Artificial_Intelligence-000000?style=for-the-badge"
+                        alt="Artificial Intelligence">
+                </a>
+                <a href="#web-development" class="badge">
+                    <img src="https://img.shields.io/badge/-Web_Development-3E7CC2?style=for-the-badge"
+                        alt="Web Development">
+                </a>
+                <a href="#computer-graphics" class="badge">
+                    <img src="https://img.shields.io/badge/-Computer_Graphics-008000?style=for-the-badge"
+                        alt="Computer Graphics">
+                </a>
+            </div>
+
+            <h3 id="artificial-intelligence">Artificial Intelligence</h3>
+            <div class="projects">
+                <div class="project">
+                    <h3>Open Images - Image Classification</h3>
+                    <p>Image Classification on Open Images</p>
+                    <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
+                    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white">
+                    <img src="https://github.com/lischilpp/open-images-image-classification/blob/main/screenshots/script7.png?raw=true"
+                        alt="Open Images - Image Classification">
+                    <a href="https://github.com/lischilpp/open-images-image-classification" class="project-link"
+                        target="_blank">View project</a>
+                </div>
+                <div class="project">
+                    <h3>Phoneme Alignment</h3>
+                    <p>Phoneme classification and alignment on the TIMIT dataset</p>
+                    <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
+                    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white">
+                    <img src="https://github.com/lischilpp/lischilpp.github.io/blob/main/res/img/bachelor_thesis.png?raw=true"
+                        alt="Phoneme Alignment">
+                    <a href="https://github.com/lischilpp/bachelor-thesis-phoneme-recognition-alignment"
+                        class="project-link" target="_blank">View project</a>
+                </div>
+            </div>
+
+            <h3 id="web-development">Web Development</h3>
+            <div class="projects">
+                <div class="project">
+                    <h3>TEQST</h3>
+                    <p>An app to effectively collect speech data</p>
+                    <img src="https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white">
+                    <img src="https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white">
+                    <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
+                    <img src="https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white">
+                    <img src="https://github.com/lischilpp/lischilpp.github.io/blob/main/res/img/teqst.png?raw=true"
+                        alt="TEQST">
+                    <a href="https://github.com/TEQST" class="project-link" target="_blank">View project</a>
+                </div>
+                <div class="project">
+                    <h3>Math Plotter</h3>
+                    <p>A graphing tool for plotting objects</p>
+                    <img src="https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white">
+                    <img src="https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white">
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black">
+                    <img src="https://github.com/lischilpp/math-plotter/blob/master/img/screenshot1.png?raw=true"
+                        alt="Math Plotter">
+                    <a href="https://github.com/lischilpp/math-plotter" class="project-link" target="_blank">View
+                        project</a>
+                </div>
+            </div>
         </div>
-        <!-- <article class="project">
-            <img src="res/img/bachelor_thesis.png">
-            <h3 class="project-title">Bachelor Thesis: Phoneme classification and alignment through recognition on TIMIT</h3>
-            <div class="project-details">
-                <p>
-                    In this work, we explore a hybrid approach combining Artificial Neural Networks (ANNs)
-                    and Dynamic Time Warping (DTW) for phoneme alignment on the TIMIT dataset.
-                    The method leverages the output probabilities from a neural phoneme recognition model
-                    alongside a probability-based DTW to achieve precise phoneme alignment.
-                    For phoneme recognition, our model achieves an 18.1% Frame Error Rate (FER),
-                    which represents a 4.0% improvement over the state-of-the-art.
-                    Our alignment method attains an 86.3% phoneme boundary accuracy
-                    within a 20ms tolerance.
-                    To efficiently train the network we introduce the CyclicPlateauScheduler,
-                    a learning rate scheduler that combines triangular cyclic learning rates
-                    with ReduceLROnPlateau.
-                </p>
-                <a href="https://github.com/lischilpp/BachelorThesis-PhonemeRecognitionAlignment" target="_blank">View on GitHub</a>
-            </div>
-        </article>
-        <article class="project">
-            <figure class="project-image">
-                <img src="res/img/teqst.png">
-            </figure>
-            <div class="project-details">
-                <h3>TEQST</h3>
-                <p>
-                    TEQST is a user-friendly WebApp designed to simplify the creation and management
-                    of speech data. It features a modern, platform-independent web interface
-                    that ensures seamless access across various devices.
-                    The account management system supports different permissions for publishers,
-                    readers, and listeners, providing tailored access and control.
-                Users can create multi-level folder structures to efficiently organize texts,
-                upload texts and automatically split them into separate parts,
-                and easily share texts with readers using filter options.
-                TEQST also offers comprehensive statistics for user completion and the ability
-                to download recorded texts as audio files, making it an invaluable tool
-                for distributing text and collecting speech data.
-                </p>
-                <a href="https://github.com/TEQST" target="_blank">View on GitHub</a>
-            </div>
-        </article>
-        <article class="project">
-            <figure class="project-image">
-                <img src="res/img/unity_voxel_engine_grid.png">
-            </figure>
-            <div class="project-details">
-                <h3>Unity Voxel Engine</h3>
-                <p>
-                    A voxel engine developed using the Unity3D game engine.<br>
-                    It is written in C# and offers an immersive and interactive environment
-                    for voxel-based worlds.
-                    It features fixed size spherical chunk loading for optimized rendering
-                    and seamless navigation.
-                    The engine supports transparent materials like glass
-                    and connected blocks such as water, along with a variety of block types
-                    to create diverse terrains and structures.
-                    It includes terrain generation from noise to ensure unique and dynamic landscapes.
-                    Players can interact with the environment through intuitive block placement
-                    and destruction using right and left-click controls,
-                    and can quickly modify large areas with the fast block destroying feature
-                    by holding the 'F' key.      
-                </p>
-                <a href="https://github.com/lischilpp/UnityVoxelEngine" target="_blank">View on GitHub</a>
-            </div>
-        </article>
-        <article class="project">
-            <figure class="project-image">
-                <img src="res/img/opengl_3d_engine.png">
-            </figure>
-            <div class="project-details">
-                <h3>OpenGL 3D-Engine</h3>
-                <p>
-                    This OpenGL 3D engine provides a comprehensive platform for developing and rendering 3D graphics
-                    using the C++ programming language. 
-                    It features user-friendly mesh and scene management capabilities,
-                    allowing for efficient handling and manipulation of complex environments.
-                    Using a modular approach for all components and engine features,
-                    it offers flexibility and scalability.
-                    The inclusion of a skybox enhances visual realism by providing environmental backgrounds.
-                    A first-person controller offers intuitive navigation and interaction within the 3D space.
-                    The engine supports animations, bringing models to life with smooth and realistic motion.
-                    Additionally, keyboard event callbacks enable responsive and customizable user input,
-                    making the engine versatile and user-friendly for various 3D applications.
-                </p>
-                <a href="https://github.com/lischilpp/OpenGL-3D-Engine" target="_blank">View on GitHub</a>
-            </div>
-        </article>
-        
-        <article class="project">
-            <figure class="project-image">
-                <img src="res/img/math_plotter.png">
-            </figure>
-            <div class="project-details">
-                <h3>Math Plotter</h3>
-                <p>
-                    MathPlotter is a graphing tool designed to simplify the plotting of objects
-                    in a parallel perspective 3D coordinate system.
-                    This program is ideal for visualizing points, objects, and vectors
-                    as seen in math schoolbooks.
-                    Key features include zoom-in, zoom-out, and move functionalities for easy navigation,
-                    along with labeled axes for clarity.
-                    The tool incorporates a math notepad-like square grid and supports labeled vectors,
-                    rectangles, circles, cuboids, and tetrahedrons.
-                    Additionally, it can plot 1D and 2D functions, making it a versatile
-                    and user-friendly tool for educational and professional use.
-                    The tool is implemented using JavaScript and the HTML5 Canvas element,
-                    ensuring a responsive and interactive user experience directly within the web browser.
-                </p>
-                <a href="https://github.com/lischilpp/MathPlotter" target="_blank">View on GitHub</a>
-            </div>
-        </article>
-        <article class="project">
-            <figure class="project-image">
-                <img src="res/img/bk_apocalypse.png">
-            </figure>
-            <div class="project-details">
-                <h3>The Apocalypse</h3>
-                <p>
-                    "The Apocalypse" is an immersive art project created using the Unity 3D engine and C#,
-                    combining animation and an interactive environment to depict a dramatic narrative
-                    of the moon crashing into the Earth.
-                    Key features include a Dolly Zoom on a TV screen with a flip book animation
-                    recounting the story of the moon landing, and an intense animation of a rocket
-                    crashing into the moon with extensive flames.
-                    In the 3D landscape, users can walk around,
-                    explore, and experience the end of the world as the moon descends onto the Earth,
-                    filling the scene with flares until everything fades to white.
-                </p>
-            </div>
-        </article>
-        <article class="project">
-            <figure class="project-image">
-                <img src="res/img/marching_cubes_planet.png">
-            </figure>
-            <div class="project-details">
-                <h3>Marching Cubes Planet</h3>
-                <p>
-                    Marching Cubes Planet is a dynamic and interactive simulation created using the Unity 3D engine and C#.
-                    It features smooth voxel terrain generated with the marching cubes algorithm,
-                    providing a seamless and visually appealing landscape. The planet has point gravity directed towards its center,
-                    enhancing the immersive experience. Efficient rendering is achieved through chunk loading, ensuring smooth performance.
-                    Users can interactively walk around the planet and modify the terrain by "melting" it with a mouse click,
-                    adding a unique interactive element to the exploration.
-                </p>
-            </div>
-        </article>
-        <article class="project">
-            <figure class="project-image">
-                <img src="res/img/gaming_clan_homepage.png">
-            </figure>
-            <div class="project-details">
-                <h3>Gaming Clan Homepage</h3>
-                <p>
-                    A dynamic and modern homepage designed for a gaming clan,
-                    featuring cutting-edge web design with HTML5 and CSS.
-                    The site includes an interactive background image that moves with the mouse pointer
-                    and animated elements that appear smoothly upon page load,
-                    creating an engaging and immersive user experience.
-                </p>
-                <a href="https://github.com/lischilpp/gaming-clan-homepage" target="_blank">View on GitHub</a>
-            </div>
-        </article> -->
     </main>
     <footer>
         <p>&copy; 2024 Linus Schilpp</p>
     </footer>
-    <script src="index.js"></script>
 </body>
+
 </html>
